@@ -26,16 +26,16 @@ The advanced instructions allows you to link with your own sheet and keep a sepa
 ### Advanced
 1. Copy the ExpenseBudgetAlert.js content into a new GAS project 
 1. Create a spreadsheet with a sheet named `Yearly` and the layout (and month names) as this one https://docs.google.com/spreadsheets/d/1IURgnLjAivPTwHcCjtlANPaFGl8X0pH8I-O-Qzfpey8 or update your script with your month's names and column indexes. Check this code
-```
-var expenses = [];
-var range = spreadsheet.getSheetByName('Yearly').getDataRange().getValues();
-  
-for(var i = 0; i < range.length; i++) {
-    var month = range[i][1];
-    var _cur = range[i];
-    expenses.push(new Expense(_cur[0], _cur[1], _cur[2], _cur[3]));
-}
-```
+    ```
+    var expenses = [];
+    var range = spreadsheet.getSheetByName('Yearly').getDataRange().getValues();
+      
+    for(var i = 0; i < range.length; i++) {
+        var month = range[i][1];
+        var _cur = range[i];
+        expenses.push(new Expense(_cur[0], _cur[1], _cur[2], _cur[3]));
+    }
+    ```
 1. Fill in the BUDGET_SHEET with the ID of the google sheet you just created
 1. Fill in the email properties
     1. RECIPIENTS to be your email address
