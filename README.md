@@ -49,3 +49,4 @@ The advanced instructions allows you to link with your own sheet and keep a sepa
     1. Click on `Add a trigger`
     1. Change `event source` to `Time-driven`
     1. Adjust your scheduling preferences
+
